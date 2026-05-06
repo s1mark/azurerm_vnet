@@ -5,8 +5,6 @@ module "network" {
   vnet_name             = "vnet-user-01"
   location              = "germanywestcentral"
   resource_group_name   = "rg-user-01"
-  
-  # Using the first entry from your list
   vnet_address_space    = "10.1.0.0/16"
   subnet_name           = "internal"
   subnet_address_prefix = "10.1.1.0/24"
