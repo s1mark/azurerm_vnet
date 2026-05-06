@@ -1,3 +1,4 @@
+```hcl
 module "network" {
   source                = "./modules/vnet"
   
@@ -10,9 +11,11 @@ module "network" {
   subnet_name           = "internal"
   subnet_address_prefix = "10.1.1.0/24"
 }
-
-      VNet Address Space (CIDR) ; Subnet Address Prefix (CIDR)
+```
+```sh
+#     VNet Address Space (CIDR) ; Subnet Address Prefix (CIDR)
 1     10.1.0.0/16                 10.1.1.0/24
 2     10.2.0.0/16                 10.2.1.0/24
 3     10.3.0.0/16                 10.3.1.0/24
 ...
+```
